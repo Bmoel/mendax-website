@@ -1,21 +1,21 @@
-import ListGroup from "./components/listGroup";
-import Alert from "./components/alert";
-import Button from "./components/button"; 
-import { useState } from "react";
-
-//Helper function for ListGroup
-const handleSelectItem = (item:string) => {
-  console.log(item)
-}
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Downloads from "./pages/Downloads";
+import About from "./pages/About";
+import NoPage from "./pages/NoPage";
 
 function App() {
-  let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
-  const [alertVisible, setAlertVisible] = useState(false)
   return (
     <div>
-      {alertVisible && <Alert onClose={() => setAlertVisible(false)}>Wow you clicked the button!</Alert>}
-      <Button name="Fancy Name" color='info' onBtnClick={() => setAlertVisible(true)} />
-      <ListGroup items={items} heading="Cities" onSelectItem={handleSelectItem}/>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home/>}></Route>
+          <Route path="/home" element={<Home/>}></Route>
+          <Route path="/downloads" element={<Downloads/>}></Route>
+          <Route path="/about" element={<About/>}></Route>
+          <Route path="*" element={<NoPage/>}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
