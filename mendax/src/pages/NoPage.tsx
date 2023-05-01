@@ -4,9 +4,9 @@ import "./NoPage.css"
 function NoPage() {
     return (
         <div>
-            <Navbar imgPath="/MendaxLogo.png" currentPage={-1}></Navbar>
-            <h1>Error</h1>
-            <p>You have entered an invalid path O_o</p>
+            <Navbar currentPage={-1}></Navbar>
+            <h1 className="NoPage_h1">Error</h1>
+            <p className="NoPage_p">You have entered an invalid path O_o</p>
         </div>
     )
 }
