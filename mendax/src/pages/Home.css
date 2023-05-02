@@ -1,0 +1,13 @@
+.minigameImg {
+    width: 25%;
+    height: 30%;
+}
+
+.minigameText {
+    word-wrap: break-word;
+    width: 40%;
+}
+
+.HomePage {
+    margin-left: 5px;
+}
