@@ -3,7 +3,7 @@ import "./Home.css"
 
 function Home() {
     return (
-        <div className="HomePage">
+        <div className="homeMargin">
             <Navbar currentPage={0}></Navbar>
             <p>This was a game built to better learn networking capabilities and player cooperation in games</p>
             <p>The goal of Mendax is to fight your way through a cave with friends, with different minigames to experience along the way</p>

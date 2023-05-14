@@ -1,8 +1,9 @@
-import Navbar from "../components/navbar"
+import Navbar from "../components/navbar";
+import "./About.css";
 
 function About() {
     return (
-        <div>
+        <div className="about_margin">
             <Navbar currentPage={2}></Navbar>
             <h1><b>A team project by Team 20</b></h1>
             <h4>University of Kansas: Class of 2023</h4>
