@@ -1,13 +1,19 @@
+import React from "react"
 import Navbar from "../components/navbar"
-import "./NoPage.css"
 
 function NoPage() {
     return (
-        <div>
+        <React.Fragment>
             <Navbar currentPage={-1}></Navbar>
-            <h1 className="NoPage_h1">Error</h1>
-            <p className="NoPage_p">You have entered an invalid path, please enter a new one</p>
-        </div>
+            <div className="container text-center">
+                <div className="row">
+                    <h1 className="text-wrap text-danger fw-bold">Error</h1>
+                </div>
+                <div className="row">
+                    <p className="NoPage_p">You have entered an invalid path, please enter a new one</p>
+                </div>
+            </div>
+        </React.Fragment>
     )
 }
 
