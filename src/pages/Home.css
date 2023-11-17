@@ -1,35 +1,4 @@
-/*Handle images on non-mobile broswers*/
-.minigameImgDesktop {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 45%;
-}
-
-/*Handle images on mobile broswers*/
-.minigameImgMobile {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
-}
-
-/*Handle paragraph text on non-mobile broswers*/
-.minigameTextDesktop {
-    word-wrap: break-word;
-    width: 80%;
-    padding: 10px;
-}
-
-/*Handle paragraph text on mobile broswers*/
-.minigameTextMobile {
-    margin: auto;
-    width: 100%;
-    padding: 10px;
-    word-wrap: break-word;
-}
-
-/*Margin for the whole page*/
-.homeMargin {
-    margin: 5px;
+.pictureSize {
+    max-width: 800px;
+    max-height: 600px;
 }

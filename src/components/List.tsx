@@ -5,8 +5,8 @@ interface ListProps {
 const List = ({ items }: ListProps) => {
   return (
     <ul className="list-group list-group-flush">
-        {items.map( (item) => (
-              <li className="list-group-item">{item}</li>
+        {items.map( (item, idx) => (
+              <li className="list-group-item" key={idx}>{item}</li>
         ))
         }
     </ul>
